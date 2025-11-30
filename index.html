@@ -4,12 +4,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Temperatur conversion:</h1>
-    <input id="Temperatur"><br>
-    <input type="radio" name="name">Celsius->Fahrenheit<br>
-    <input type="radio" name="name">Fahrenheit->Celsius<br>
-    <button>submit</button>
-    <p></p>
+    <form>
+        <h1>Temperature conversion:</h1>
+        <input type="number" id="Temperature" value="0"><br>
+
+
+        <input type="radio" id="toFahrenheit" name="unit">
+        <label for="toFahrenheit">Celsius ➡️ Fahrenheit</label><br>
+
+        <input type="radio" id="toCelsius" name="unit">
+        <label for="toCelsius">Fahrenheit ➡️ Celcius</label><br>
+        <button type="button" onclick="convert()">submit</button>
+        <p id="result"></p>
+    </form>
+    
+
     <script src="index.js"></script>
 </body>
 </html>
